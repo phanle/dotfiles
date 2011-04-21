@@ -3,6 +3,7 @@ alias grep="grep --color"
 alias rm="rm -r"
 alias ls="ls -G"
 alias top="top -F -o cpu"
+alias gs="git status"
 
 
 # changing directory to code project

@@ -16,4 +16,4 @@ fi
 # [ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
 
 [ -f ~/.rubyrc ] && source ~/.rubyrc
-# source `brew --prefix git`/etc/bash_completion.d/git-completion.bash
+
