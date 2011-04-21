@@ -7,3 +7,13 @@ source ~/.bash/config
 if [ -f ~/.localrc ]; then
   source ~/.localrc
 fi
+
+if [ -f /opt/local/etc/bash_completion ]; then
+. /opt/local/etc/bash_completion
+fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# [ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
+
+[ -f ~/.rubyrc ] && source ~/.rubyrc
+# source `brew --prefix git`/etc/bash_completion.d/git-completion.bash

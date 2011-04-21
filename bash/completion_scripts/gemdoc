@@ -1,0 +1,27 @@
+#export GEMDIR
+
+gemdoc() {
+    : ${GEMDIR=`gem env gemdir`}
+    open $GEMDIR/doc/`ls $GEMDIR/doc | grep $1 | sort | head -1`/rdoc/index.html
+}
+
+_gemdocomplete() {
+    : ${GEMDIR=`gem env gemdir`}
+    COMPREPLY=($(compgen -W '$(ls $GEMDIR/doc)' -- ${COMP_WORDS[COMP_CWORD]}))
+    return 0
+}
+
+complete -o default -o nospace -F _gemdocomplete gemdoc
+
+gemmate() {
+    : ${GEMDIR=`gem env gemdir`}
+    mate "`ls -d $GEMDIR/gems/$1* | sort -r | head -1`"
+}
+
+_gemcomplete() {
+    : ${GEMDIR=`gem env gemdir`}
+    COMPREPLY=($(compgen -W '$(ls $GEMDIR/gems)' -- ${COMP_WORDS[COMP_CWORD]}))
+    return 0
+}
+
+complete -o default -o nospace -F _gemcomplete gemmate

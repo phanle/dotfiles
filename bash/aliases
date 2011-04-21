@@ -1,4 +1,9 @@
-. ~/.zsh/aliases
+alias l="ls -GlAr"
+alias grep="grep --color"
+alias rm="rm -r"
+alias ls="ls -G"
+alias top="top -F -o cpu"
+
 
 # changing directory to code project
 function c { cd ~/code/$1; }
