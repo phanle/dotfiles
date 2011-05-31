@@ -18,4 +18,4 @@ def routes_access
   default_url_options[:host] = Rails.application.class.parent_name.downcase
 end
 
-
+load(File.join(Dir.pwd,".railsrc")) if File.exist?(File.join(Dir.pwd,".railsrc"))
