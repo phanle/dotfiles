@@ -4,6 +4,7 @@ complete -C ~/.bash/completion_scripts/project_completion -o default c
 complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
 
 source ~/.bash/completion_scripts/go.sh
-source ~/.bash/completion_scripts/gemdoc.sh 
+source ~/.bash/completion_scripts/gemdoc.sh
+source ~/.bash/completion_scripts/ssh.sh 
 [[ -r ~/.rvm/scripts/completion ]] && . ~/.rvm/scripts/completion
 
