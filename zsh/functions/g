@@ -1,0 +1,1 @@
+mate `gem env gemdir`/gems/$1 

@@ -2,7 +2,7 @@
 alias ..='cd ..'
 
 # ls
-alias ls="ls -F"
+alias ls="ls -G"
 alias l="ls -lAh"
 alias ll="ls -l"
 alias la='ls -A'
@@ -31,3 +31,6 @@ alias rst='touch tmp/restart.txt'
 
 # commands starting with % for pasting from web
 alias %=' '
+
+alias restart_rails_app="touch tmp/restart.txt"
+alias pry_console="EDITOR=mate pry -r config/environment.rb -r ~/.railsrc"
