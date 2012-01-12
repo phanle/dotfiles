@@ -9,6 +9,7 @@ alias la='ls -A'
 
 # git
 alias gl='git pull'
+alias gpr='git pull --rebase'
 alias gp='git push'
 alias gd='git diff'
 alias gc='git commit'
@@ -20,9 +21,6 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 
 # rails
-alias sc='script/console'
-alias ss='script/server'
-alias sg='script/generate'
 alias a='autotest -rails'
 alias tlog='tail -f log/development.log'
 alias scaffold='script/generate nifty_scaffold'
@@ -31,6 +29,10 @@ alias rst='touch tmp/restart.txt'
 
 # commands starting with % for pasting from web
 alias %=' '
+alias rspec="rspec --drb"
+
+#Bundler
+#alias b="bundle exec"
 
 alias restart_rails_app="touch tmp/restart.txt"
 alias pry_console="EDITOR=mate pry -r config/environment.rb -r ~/.railsrc"

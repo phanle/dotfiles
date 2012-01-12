@@ -21,4 +21,5 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
   else
     warn "[WARN] cannot load Rails console commands (Not on Rails2 or Rails3?)"
   end
+  load File.dirname(__FILE__) + '/.railsrc'
 end
