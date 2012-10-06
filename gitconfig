@@ -1,0 +1,23 @@
+[user]
+	name = Phan Le
+	email = phan.anh.le@gmail.com
+[alias]
+	co = checkout
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	excludesfile = ~/.gitignore
+	editor =
+	autocrlf = input
+[apply]
+	whitespace = nowarn
+[format]
+	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[github]
+	user = phan_le
+  token = 24ae8b819029539a27c3fa473cbe9bb6
+[branch "master"]
+  remote = origin
+  merge = master
