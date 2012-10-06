@@ -2,7 +2,7 @@ autoload -U colors && colors
 export PS1="%{$fg[green]%}➜ %{$reset_color%}%"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-[ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
+#[ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
 export PATH=./:/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/bin:~/bin/git-scripts:~/bin:/opt/local/sbin:/usr/local/bin:$PATH:/opt/local/bin:/Library/PostgreSQL/9.0/bin/
 
 export PATH="$PATH:$HOME/bin:$HOME/.bin:/usr/local/homebrew/bin:/usr/local/sbin:/usr/local/git/bin"
@@ -43,5 +43,5 @@ bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^[^N' newtab
-bindkey '^?' backward-delete-char 
+bindkey '^?' backward-delete-char
 

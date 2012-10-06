@@ -29,7 +29,6 @@ alias rst='touch tmp/restart.txt'
 
 # commands starting with % for pasting from web
 alias %=' '
-alias rspec="rspec --drb"
 
 #Bundler
 #alias b="bundle exec"
